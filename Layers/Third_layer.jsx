@@ -5,6 +5,7 @@ import { GiFactory } from "react-icons/gi";
 import { TbBuildingFactory } from "react-icons/tb";
 import { BiSolidFactory } from "react-icons/bi";
 import { FaArrowRight } from "react-icons/fa6";
+import Forth_layer from "./Forth_layer";
 const Third_layer = () => {
 
 
@@ -29,7 +30,7 @@ const Third_layer = () => {
 
 
     return (
-        <div className="-mt-10 manrope">
+        <div className="md:-mt-70 -mt-40 manrope">
             <div className="bg-[#222222] h-screen md:h-[541px] w-full">
                 <div className="w-11/12 md:w-9/12 mx-auto pt-8 md:pt-30 opacity-30">
                     <div className="flex flex-col md:flex-row md:justify-between md:gap-20 space-y-6 md:space-y-0">
@@ -75,7 +76,7 @@ const Third_layer = () => {
                                         <h1 className="text-gray-900 ml-2 font-bold mt-4 text-lg md:w-[220px]">
                                             {service.title}
                                         </h1>
-                                        <button className="ml-4 mt-6 md:mt-10 cursor-pointer bg-gray-100 hover:bg-gray-300 rounded-md px-8 py-3 transition-colors">
+                                        <button className="ml-2 mt-6 md:mt-10 cursor-pointer bg-gray-100 hover:bg-gray-300 rounded-md px-8 py-3 transition-colors">
                                             <FaArrowRight />
                                         </button>
                                     </div>
@@ -85,6 +86,7 @@ const Third_layer = () => {
                     </div>
                 </div>
             </div>
+            <Forth_layer></Forth_layer>
         </div>
     );
 };
