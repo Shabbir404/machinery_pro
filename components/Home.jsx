@@ -3,6 +3,8 @@ import { MdArrowOutward } from "react-icons/md";
 import { MdVerified } from "react-icons/md";
 import { IoSettingsOutline } from "react-icons/io5";
 import { FaStar } from "react-icons/fa6";
+import industryImg from '../src/images/indrusty.png'
+import Third_layer from '../Layers/Third_layer';
 const Home = () => {
     return (
         <div className='mb-60 Manrope'>
@@ -126,18 +128,21 @@ const Home = () => {
                                 </div>
                                 <MdArrowOutward className='text-xl ml-2  mt-2.5'></MdArrowOutward>
                             </div>
-
                         </div>
+
 
                     </div>
                 </div>
             </div>
+            <div className=''>
+                <div className='-mt-64'>
+                    <img className='w-[500px] h-[330px] opacity-10' src={industryImg} alt="" />
+                </div>
+            </div>
+
+            <Third_layer></Third_layer>
 
 
-
-
-
- 
         </div >
     );
 };
