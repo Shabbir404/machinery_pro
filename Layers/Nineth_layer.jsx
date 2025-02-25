@@ -2,6 +2,9 @@ import '../css/main_all.css'
 import { IoSettingsOutline } from "react-icons/io5";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
+import Tenth_layer from './Tenth_layer';
+import { MdEnergySavingsLeaf } from "react-icons/md";
+import { FaRegSun } from "react-icons/fa6";
 
 const Nineth_layer = () => {
     return (
@@ -56,9 +59,28 @@ const Nineth_layer = () => {
 
                     </div>
                 </div>
+                <div className='hidden md:block w-9/12 mx-auto -mt-10'>
+                    <div className=' grid grid-cols-4 '>
+                        <div className='flex gap-2'>
+                            <MdEnergySavingsLeaf className='text-4xl text-[#FF9900]'></MdEnergySavingsLeaf>
+                            <h1 className='text-black text-2xl font-extrabold'>Logoipsum</h1>
+                        </div>
+                        <div className='flex gap-2'>
+                            <FaRegSun className='text-4xl text-[#FF9900]'></FaRegSun>
+                            <h1 className='text-black text-2xl font-extrabold'>Logoipsum</h1>
+                        </div>
+                        <div className='flex gap-2'>
+                            <MdEnergySavingsLeaf className='text-4xl text-[#FF9900]'></MdEnergySavingsLeaf>
+                            <h1 className='text-black text-2xl font-extrabold'>Logoipsum</h1>
+                        </div>
+                        <div className='flex gap-2'>
+                            <MdEnergySavingsLeaf className='text-4xl text-[#FF9900]'></MdEnergySavingsLeaf>
+                            <h1 className='text-black text-2xl font-extrabold'>Logoipsum</h1>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
+            <Tenth_layer></Tenth_layer>
         </div>
     );
 };
