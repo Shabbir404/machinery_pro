@@ -1,5 +1,6 @@
 
 import { IoSettingsOutline } from 'react-icons/io5';
+import Saventh_layer from './Saventh_layer';
 
 const Sixth_layer = () => {
     return (
@@ -117,7 +118,7 @@ const Sixth_layer = () => {
 
                 </div>
             </div>
-
+            <Saventh_layer></Saventh_layer>
         </div>
     );
 };
