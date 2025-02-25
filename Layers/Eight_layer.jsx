@@ -4,6 +4,7 @@ import { IoSettingsSharp } from "react-icons/io5";
 import { CiCalendar } from "react-icons/ci";
 import { CiClock2 } from "react-icons/ci";
 import { FaMoneyBills } from "react-icons/fa6";
+import Nineth_layer from './Nineth_layer';
 const Eight_layer = () => {
 
     const features = [
@@ -69,7 +70,7 @@ const Eight_layer = () => {
                                 </div>
                             </div>
 
-                            <div className="relative bg-[#FF9900] rounded-4xl shadow-lg overflow-hidden p-8 transform md:scale-105 z-10">
+                            <div className="relative bg-[#FF9900] rounded-4xl shadow-xl overflow-hidden p-8 transform md:scale-105 z-10">
                                 <div className="absolute top-0 right-0 w-32 h-32 overflow-hidden">
                                     <svg viewBox="0 0 100 100" className="absolute top-0 right-0 text-white opacity-20">
                                         <circle cx="80" cy="20" r="15" fill="currentColor" />
@@ -164,7 +165,7 @@ const Eight_layer = () => {
                     </div>
                 </div>
             </div>
-
+            <Nineth_layer></Nineth_layer>
         </div>
     );
 };
