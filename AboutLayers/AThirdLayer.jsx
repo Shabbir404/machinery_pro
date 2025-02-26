@@ -6,6 +6,7 @@ import { AiOutlineAim } from "react-icons/ai";
 import '../css/main_all.css'
 import { useState } from "react";
 import { FaCog } from "react-icons/fa";
+import AForthLayer from "./aForthLayer";
 
 const AThirdLayer = () => {
     const [activeTab, setActiveTab] = useState('mission');
@@ -73,13 +74,13 @@ const AThirdLayer = () => {
                 <div className="p-4 md:p-8">
                     {activeTab === 'mission' && (
                         <div className="flex flex-col md:flex-row gap-4">
-                            <div className="bg-white p-6 w-full md:w-[600px]">
+                            <div className="bg-white p-4  w-full md:w-[600px]">
                                 <p className="text-gray-600 text-lg mb-4">
                                     Our mission is to transform the factory and industry sectors through
                                     sustainable practices, innovation, and advanced technology, fostering
                                     growth that benefits both business and the environment.
                                 </p>
-                                <ul className="space-y-3">
+                                <ul className="space-y-3 md:pt-5">
                                     {points.map((point, index) => (
                                         <li key={index} className="flex items-center space-x-3">
                                             <FaCog className="text-[#FF9900]" />
@@ -88,7 +89,9 @@ const AThirdLayer = () => {
                                     ))}
                                 </ul>
                             </div>
-                            <div className="bg-[#C4C4C4] w-full md:w-[540px] h-80 rounded-3xl"></div>
+                            <div className="bg-[#C4C4C4] w-full  md:w-[540px] h-80 rounded-3xl">
+
+                            </div>
                         </div>
                     )}
                     {activeTab === 'vision' && (
@@ -105,8 +108,7 @@ const AThirdLayer = () => {
                     )}
                 </div>
             </div>
-
-
+            <AForthLayer></AForthLayer>
         </div >
     );
 };
