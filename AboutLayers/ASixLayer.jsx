@@ -1,5 +1,6 @@
 import '../css/main_all.css'
 import { IoSettingsOutline } from "react-icons/io5";
+import ASaventhLayer from './ASaventhLayer';
 const ASixLayer = () => {
     return (
         <div>
@@ -89,6 +90,7 @@ const ASixLayer = () => {
                     <div className="bg-[#C4C4C4] "></div>
                 </div>
             </div>
+            <ASaventhLayer></ASaventhLayer>
         </div>
     );
 };
