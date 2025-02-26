@@ -5,6 +5,7 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { FaStar } from "react-icons/fa6";
 import industryImg from '../src/images/indrusty.png'
 import Third_layer from '../Layers/Third_layer';
+
 const Home = () => {
     return (
         <div className=''>
@@ -50,7 +51,6 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-
                 <div className='mt-12 md:mt-30 w-11/12 md:w-8/12 mx-auto'>
                     <div className='flex flex-col md:flex-row md:gap-20'>
                         <div className='hidden md:block'>
@@ -133,7 +133,6 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-
                 <div className=''>
                     <div className='-mt-64 hidden md:block'>
                         <img className='w-[500px] h-[330px] opacity-10' src={industryImg} alt="" />
@@ -142,8 +141,6 @@ const Home = () => {
             </div>
 
             <Third_layer></Third_layer>
-
-
         </div >
     );
 };

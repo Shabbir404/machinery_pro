@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
+import { NavLink } from "react-router-dom";
 
 
 const Header = () => {
@@ -9,7 +10,6 @@ const Header = () => {
     return (
         <>
             <div className="h-20 w-full"></div>
-
             {/* Header */}
             <header className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-md z-40">
                 <div className="border-b border-gray-100">
@@ -26,14 +26,32 @@ const Header = () => {
                                 {/* Desktop Navigation */}
                                 <div className="hidden md:flex  md:ml-60">
                                     <div className="flex space-x-8">
-                                        <a href="#" className="text-gray-700 hover:text-orange-500 font-medium transition-colors duration-200 relative group">
+                                        <NavLink to='/'
+                                            className={({ isActive }) =>
+                                                isActive
+                                                    ? "text-orange-500 font-medium transition-colors duration-200 relative group" // Active styles
+                                                    : "text-gray-700 hover:text-orange-500 font-medium transition-colors duration-200 relative group" // Inactive styles
+                                            }
+
+                                        >
                                             Home
                                             <span className="absolute inset-x-0 bottom-0 h-0.5 bg-orange-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
-                                        </a>
-                                        <a href="#" className="text-gray-700 hover:text-orange-500 font-medium transition-colors duration-200 relative group">
+                                        </NavLink>
+
+
+                                        <NavLink
+                                            to="/about"
+                                            className={({ isActive }) =>
+                                                isActive
+                                                    ? "text-orange-500 font-medium transition-colors duration-200 relative group" // Active styles
+                                                    : "text-gray-700 hover:text-orange-500 font-medium transition-colors duration-200 relative group" // Inactive styles
+                                            }
+                                        >
                                             About Us
                                             <span className="absolute inset-x-0 bottom-0 h-0.5 bg-orange-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
-                                        </a>
+                                        </NavLink>
+
+
                                         <a href="#" className="flex  text-gray-700 hover:text-orange-500 font-medium transition-colors duration-200 relative group">
                                             Services
                                             <IoIosArrowDown className="text-md mt-1.5 ml-2"></IoIosArrowDown>

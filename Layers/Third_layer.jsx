@@ -8,7 +8,6 @@ import { FaArrowRight } from "react-icons/fa6";
 import Forth_layer from "./Forth_layer";
 const Third_layer = () => {
 
-
     const services = [
         {
             icon: <MdOutlineFactory className="text-[#FF9900] text-6xl" />,
