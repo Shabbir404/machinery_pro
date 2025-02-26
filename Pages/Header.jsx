@@ -51,12 +51,17 @@ const Header = () => {
                                             <span className="absolute inset-x-0 bottom-0 h-0.5 bg-orange-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
                                         </NavLink>
 
-
-                                        <a href="#" className="flex  text-gray-700 hover:text-orange-500 font-medium transition-colors duration-200 relative group">
+                                        <NavLink
+                                            to="/services"
+                                            className={({ isActive }) =>
+                                                isActive
+                                                    ? "text-orange-500 font-medium transition-colors duration-200 relative group" // Active styles
+                                                    : "text-gray-700 hover:text-orange-500 font-medium transition-colors duration-200 relative group" // Inactive styles
+                                            }
+                                        >
                                             Services
-                                            <IoIosArrowDown className="text-md mt-1.5 ml-2"></IoIosArrowDown>
                                             <span className="absolute inset-x-0 bottom-0 h-0.5 bg-orange-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
-                                        </a>
+                                        </NavLink>
                                         <a href="#" className="text-gray-700 hover:text-orange-500 font-medium transition-colors duration-200 relative group">
                                             Blog
                                             <span className="absolute inset-x-0 bottom-0 h-0.5 bg-orange-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
