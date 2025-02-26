@@ -1,6 +1,7 @@
 import { FaCog } from "react-icons/fa";
 import { IoSettingsOutline } from "react-icons/io5";
 import '../css/main_all.css'
+import AFithLayer from "./AFithLayer";
 const AForthLayer = () => {
     return (
         <div>
@@ -46,7 +47,6 @@ const AForthLayer = () => {
                                 </div>
                             </div>
                         </div>
-
                         <div className="md:mt-8">
                             <h2 className="text-4xl font-light">
                                 Company <span className="font-bold">started</span>
@@ -58,7 +58,7 @@ const AForthLayer = () => {
                             <ul className="mt-6 space-y-3">
                                 {["Quality Control System", "Building Quality Industrial", "Environmental Responsibility", "Building Quality Industrial"].map((item, index) => (
                                     <li key={index} className="flex items-center gap-3">
-                                        <FaCog className="text-orange-500" /> <span>{item}</span>
+                                        <FaCog className="text-[#FF9900]" /> <span>{item}</span>
                                     </li>
                                 ))}
                             </ul>
@@ -71,6 +71,7 @@ const AForthLayer = () => {
                 </div>
             </div>
 
+            <AFithLayer></AFithLayer>
 
         </div>
     );
