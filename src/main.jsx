@@ -13,6 +13,7 @@ import Services from '../components/Services';
 import Blog from '../components/Blog';
 import Projects from '../components/Projects';
 import Pages from '../components/Pages';
+import ContactUs from '../components/ContactUs';
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: '/pricing',
         element: <Pages></Pages>
+      },
+      {
+        path: '/contact',
+        element: <ContactUs></ContactUs>
       }
     ]
   },

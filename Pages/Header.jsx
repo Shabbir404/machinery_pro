@@ -100,10 +100,17 @@ const Header = () => {
                                             Pricing
                                             <span className="absolute inset-x-0 bottom-0 h-0.5 bg-orange-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
                                         </NavLink>
-                                        <a href="#" className="text-gray-700 hover:text-orange-500 font-medium transition-colors duration-200 relative group">
-                                            Contact Us
+                                        <NavLink
+                                            to="/contact"
+                                            className={({ isActive }) =>
+                                                isActive
+                                                    ? "text-orange-500 font-medium transition-colors duration-200 relative group"
+                                                    : "text-gray-700 hover:text-orange-500 font-medium transition-colors duration-200 relative group"
+                                            }
+                                        >
+                                            Contact us
                                             <span className="absolute inset-x-0 bottom-0 h-0.5 bg-orange-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
-                                        </a>
+                                        </NavLink>
                                     </div>
                                 </div>
 
