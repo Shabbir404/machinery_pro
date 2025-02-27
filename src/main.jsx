@@ -12,6 +12,7 @@ import AboutUs from '../components/AboutUs';
 import Services from '../components/Services';
 import Blog from '../components/Blog';
 import Projects from '../components/Projects';
+import Pages from '../components/Pages';
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: '/projects',
         element: <Projects></Projects>
+      },
+      {
+        path: '/pricing',
+        element: <Pages></Pages>
       }
     ]
   },
