@@ -6,6 +6,16 @@ import { CiLocationOn } from "react-icons/ci";
 
 const ContactUs = () => {
 
+    // const handleForm = e => {
+    //     e.preventDefault();
+    //     const name = e.target.formName.value;
+    //     const email = e.target.email.value;
+    //     const phone = e.target.phone.value;
+    //     const message = e.target.message.value;
+    //     console.log(name, email, phone, message);
+
+    // }
+
     return (
         <div>
             <div className='manrope'>
@@ -78,10 +88,11 @@ const ContactUs = () => {
                             <h1 className="text-3xl mb-6 font-normal">
                                 Contact <span className="font-bold ">me</span>
                             </h1>
-                            <form>
+                            <form >
                                 <div className="grid grid-cols-2 gap-4 mb-4">
                                     <div>
                                         <input
+                                            name='formName'
                                             type="text"
                                             placeholder="Enter first name"
                                             className="w-full px-4 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FF9900]"
@@ -98,6 +109,7 @@ const ContactUs = () => {
 
                                 <div className="mb-4">
                                     <input
+                                        name='email'
                                         type="email"
                                         placeholder="Enter your e-mail"
                                         className="w-full px-4 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FF9900]"
@@ -106,6 +118,7 @@ const ContactUs = () => {
 
                                 <div className="mb-4">
                                     <input
+                                        name='phone'
                                         type="tel"
                                         placeholder="Enter your phone no."
                                         className="w-full px-4 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FF9900]"
@@ -114,6 +127,7 @@ const ContactUs = () => {
 
                                 <div className="mb-6">
                                     <textarea
+                                        name='message'
                                         placeholder="Write Message"
                                         rows="5"
                                         className="w-full px-4 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FF9900]"
@@ -130,9 +144,8 @@ const ContactUs = () => {
                     </div>
                 </div>
             </div>
-
             <div className='mt-10'>
-                <iframe width="1920" height="508" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=1920&amp;height=508&amp;hl=en&amp;q=37%20San%20Juan%20Lane%20Usa+(San)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://www.pferdeversicherung.at/pferdelebensversicherung/'>Lebensversicherung Pferd</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=86bddece756fc2143828dd83c93ea4ac42954ba6'></script>
+                <iframe width="1920" height="508" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=1920&amp;height=508&amp;hl=en&amp;q=37%20San%20Juan%20Lane%20Usa+(San)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://www.pferdeversicherung.at/pferdelebensversicherung/'></a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=86bddece756fc2143828dd83c93ea4ac42954ba6'></script>
             </div>
 
         </div>
