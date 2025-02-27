@@ -10,6 +10,7 @@ import Home from '../components/Home';
 import Route from '../Routes/Route';
 import AboutUs from '../components/AboutUs';
 import Services from '../components/Services';
+import Blog from '../components/Blog';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: '/services',
         element: <Services></Services>
+      },
+      {
+        path: '/blog',
+        element: <Blog></Blog>
       }
     ]
   },

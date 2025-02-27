@@ -1,9 +1,5 @@
 import '../css/main_all.css'
 import { useState } from "react";
-import { MdArrowOutward } from "react-icons/md";
-import { IoSettingsOutline } from "react-icons/io5";
-import { FaPhoneAlt } from "react-icons/fa";
-import { MdOutlineMail } from "react-icons/md"
 import { RiArrowUpWideFill } from "react-icons/ri";
 
 const SthirdLayer = () => {
@@ -42,7 +38,6 @@ const SthirdLayer = () => {
         setOpenQuestion(openQuestion === id ? null : id);
     };
 
-
     return (
         <div className='-mt-20 -mb-28'>
             <div className="manrope">
@@ -53,7 +48,6 @@ const SthirdLayer = () => {
                                 <h1 className="font-light inline">Frequently asked</h1>
                                 <span className="text-gray-900 ml-2">questions</span>
                             </div>
-
                         </div>
 
                     </div>
