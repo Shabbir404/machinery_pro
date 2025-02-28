@@ -42,7 +42,6 @@ const Header = () => {
                                             <span className="absolute inset-x-0 bottom-0 h-0.5 bg-orange-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
                                         </NavLink>
 
-
                                         <NavLink
                                             to="/about"
                                             className={({ isActive }) =>
@@ -66,6 +65,7 @@ const Header = () => {
                                             Services
                                             <span className="absolute inset-x-0 bottom-0 h-0.5 bg-orange-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
                                         </NavLink>
+
                                         <NavLink
                                             to="/blog"
                                             className={({ isActive }) =>
@@ -89,6 +89,7 @@ const Header = () => {
                                             Projects
                                             <span className="absolute inset-x-0 bottom-0 h-0.5 bg-orange-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
                                         </NavLink>
+
                                         <NavLink
                                             to="/pricing"
                                             className={({ isActive }) =>
@@ -100,6 +101,7 @@ const Header = () => {
                                             Pricing
                                             <span className="absolute inset-x-0 bottom-0 h-0.5 bg-orange-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
                                         </NavLink>
+
                                         <NavLink
                                             to="/contact"
                                             className={({ isActive }) =>
@@ -150,10 +152,10 @@ const Header = () => {
                                         <Link to="/" className="block px-4 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-500 rounded-lg transition-colors duration-200">Home</Link>
                                         <Link to="/about" className="block px-4 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-500 rounded-lg transition-colors duration-200">About Us</Link>
                                         <Link to="/services" className="block px-4 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-500 rounded-lg transition-colors duration-200">Services</Link>
-                                        <Link to="#" className="block px-4 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-500 rounded-lg transition-colors duration-200">Blog</Link>
-                                        <Link to="#" className="block px-4 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-500 rounded-lg transition-colors duration-200">Projects</Link>
-                                        <Link to="#" className="block px-4 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-500 rounded-lg transition-colors duration-200">Pages</Link>
-                                        <Link to="#" className="block px-4 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-500 rounded-lg transition-colors duration-200">Contact Us</Link>
+                                        <Link to="/blog" className="block px-4 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-500 rounded-lg transition-colors duration-200">Blog</Link>
+                                        <Link to="/projects" className="block px-4 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-500 rounded-lg transition-colors duration-200">Projects</Link>
+                                        <Link to="/pricing" className="block px-4 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-500 rounded-lg transition-colors duration-200">Pages</Link>
+                                        <Link to="/contact" className="block px-4 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-500 rounded-lg transition-colors duration-200">Contact Us</Link>
                                         <div className="flex items-center space-x-2 px-4 py-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-orange-500" viewBox="0 0 20 20" fill="currentColor">
                                                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
